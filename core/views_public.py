@@ -48,3 +48,18 @@ def media(request, path):
 
 def healthz(request):
     return HttpResponse("ok")
+
+
+def sitemap(request):
+    urls = ["/", "/menu/", "/gallery/", "/lokasi/", "/kontak/"]
+    body = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+    body += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    body += "".join(f"<url><loc>{request.build_absolute_uri(path)}</loc></url>" for path in urls)
+    body += "</urlset>"
+    return HttpResponse(body, content_type="application/xml")
+
+
+def robots(request):
+    sitemap_url = request.build_absolute_uri("/sitemap.xml")
+    body = f"User-agent: *\nAllow: /\nDisallow: /dashboard/\nDisallow: /media/\nSitemap: {sitemap_url}\n"
+    return HttpResponse(body, content_type="text/plain")

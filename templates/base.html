@@ -4,7 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>{% block title %}{{ restaurant.name }}{% endblock %}</title>
+  <title>{% block title %}{{ seo.title }}{% endblock %}</title>
+  <meta name="description" content="{{ seo.description }}">
+  <link rel="canonical" href="{{ seo.canonical }}">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="{{ restaurant.name }}">
+  <meta property="og:title" content="{{ seo.title }}">
+  <meta property="og:description" content="{{ seo.description }}">
+  <meta property="og:url" content="{{ seo.canonical }}">
+  {% if restaurant.logo %}<meta property="og:image" content="{{ restaurant.logo }}">{% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo.title }}">
+  <meta name="twitter:description" content="{{ seo.description }}">
+  {% if restaurant.logo %}<meta name="twitter:image" content="{{ restaurant.logo }}">{% endif %}
+  <script type="application/ld+json">{{ seo.schema_json|safe }}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">

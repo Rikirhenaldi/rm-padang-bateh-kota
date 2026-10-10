@@ -35,6 +35,22 @@ class PublicRouteTests(SimpleTestCase):
                 response = self.client.get(path)
                 self.assertEqual(response.status_code, 200)
 
+    def test_seo_routes_render_metadata(self):
+        response = self.client.get("/menu/?kategori=satuan")
+        content = response.content.decode()
+        self.assertContains(response, '<meta name="description"')
+        self.assertContains(response, '<link rel="canonical" href="http://testserver/menu/">')
+        self.assertContains(response, 'application/ld+json')
+        self.assertNotIn("kategori=satuan", content.split('<link rel="canonical"')[1].split(">", 1)[0])
+
+    def test_sitemap_and_robots(self):
+        sitemap = self.client.get("/sitemap.xml")
+        robots = self.client.get("/robots.txt")
+        self.assertEqual(sitemap.status_code, 200)
+        self.assertContains(sitemap, "http://testserver/menu/")
+        self.assertEqual(robots.status_code, 200)
+        self.assertContains(robots, "Sitemap: http://testserver/sitemap.xml")
+
     def test_dashboard_requires_login(self):
         response = self.client.get("/dashboard/")
         self.assertRedirects(response, "/dashboard/login/?next=/dashboard/")
