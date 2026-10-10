@@ -1,0 +1,9 @@
+<nav class="site-nav"><div class="wrap"><a class="logo" href="{% url 'home' %}" data-nav-key="home"><i>🍛</i><span>{{ restaurant.name }}</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span><b>Menu</b></button>
+<div class="nav-panel" id="site-navigation"><ul>
+  <li><a class="nav-link" data-nav-key="home" data-section="hero" href="{% url 'home' %}">Beranda</a></li>
+  <li><a class="nav-link" data-nav-key="about" data-section="tentang" href="{% url 'home' %}#tentang">Tentang</a></li>
+  <li><a class="nav-link" data-nav-key="menu" data-section="menu" data-page="menu" href="{% url 'home' %}#menu">Menu</a></li>
+  <li><a class="nav-link" data-nav-key="location" data-page="location" href="{% url 'location' %}">Lokasi</a></li>
+  <li><a class="nav-link" data-nav-key="gallery" data-page="gallery" href="{% url 'gallery' %}">Galeri</a></li>
+</ul><a class="btn nav-order" href="{% url 'home' %}#cart">Pesan Sekarang</a></div></div></nav>

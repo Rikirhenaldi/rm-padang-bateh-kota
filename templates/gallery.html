@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}Galeri · {{ restaurant.name }}{% endblock %}
+{% block content %}<main class="page gallery-page"><div class="wrap"><h1>Galeri</h1><p class="lead page-lead">Suasana dan sajian {{ restaurant.name }}.</p><div class="gallery-grid">{% for image in gallery_items %}<figure><img src="{{ image.url }}" alt="{{ image.caption|default:restaurant.name }}" loading="lazy"><figcaption>{{ image.caption }}</figcaption></figure>{% empty %}<div class="gallery-empty"><span>🍛</span><p>Galeri sedang disiapkan. Kunjungi kami untuk merasakan suasananya langsung.</p></div>{% endfor %}</div></div></main>{% endblock %}

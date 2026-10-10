@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RM Padang Bateh Kota – Masakan Padang Andir, Bandung</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#2F6B52;--green2:#285C46;--cream:#FCF4DE;--orange:#E8582C;--lime:#E6F76A;--yellow:#F8D340;--blue:#9CC9F2;--wa:#25B866;--shopee:#F2542D;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;overflow-x:clip;background:var(--green);color:var(--cream);font:400 16px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Impact,sans-serif;font-weight:800;line-height:1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;padding:12px 0;background:var(--green)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{font:800 1.15rem "Bricolage Grotesque",sans-serif;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font-style:normal;font-size:1rem}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:5px;background:var(--green2);border-radius:12px;font-size:.88rem}
+nav ul a{display:block;padding:6px 14px;border-radius:8px;text-decoration:none}
+nav ul a:hover,nav ul li:first-child a{background:var(--green);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 22px;font:700 .95rem "DM Sans",sans-serif;cursor:pointer;text-decoration:none;color:var(--green);background:var(--cream);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.lime{background:var(--lime)}.btn.wa{background:var(--wa);color:#fff}.btn.sf{background:var(--shopee);color:#fff}
+.btn.green{background:var(--green);color:var(--cream)}
+@media(max-width:760px){nav ul{display:none}}
+/* hero */
+.hero{position:relative;padding:40px 0 170px;overflow:hidden}
+.hero h1{font-size:clamp(3.6rem,14.5vw,10.5rem);color:var(--cream);text-align:center;position:relative;z-index:1}
+.hero h1 span{display:block}
+.hero .plate-big{position:absolute;left:50%;top:6%;transform:translateX(-50%);width:clamp(190px,34vw,360px);z-index:2;filter:drop-shadow(0 24px 24px rgba(0,0,0,.25))}
+.sprig{position:absolute;left:8%;top:-4px;width:clamp(60px,10vw,120px);z-index:3;color:#6BC46D}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:70px;position:relative;z-index:3}
+.hero-foot p{max-width:32ch;margin:0 0 18px;opacity:.9}
+.mini{background:var(--cream);color:var(--green);border-radius:16px;padding:12px 14px;text-align:center;width:150px;box-shadow:0 14px 26px -12px rgba(0,0,0,.4)}
+.mini svg{width:64px;display:block;margin:0 auto 4px}
+.mini b{display:block;font:800 .9rem "Bricolage Grotesque",sans-serif;line-height:1.15;margin-bottom:8px}
+.mini .btn{padding:6px 12px;font-size:.8rem;width:100%}
+@media(max-width:700px){.hero-foot{flex-direction:column;align-items:flex-start;margin-top:40px}.hero .plate-big{top:9%}}
+/* curved story */
+.story{background:var(--cream);color:var(--green);margin-top:-110px;border-radius:50% 50% 0 0/110px 110px 0 0;padding:110px 0 70px;position:relative;z-index:4;text-align:center}
+h2{font-size:clamp(2rem,5vw,3.4rem)}
+.story h2{max-width:14ch;margin:0 auto 14px}
+.story p.lead{max-width:52ch;margin:0 auto 44px;opacity:.85}
+.tiles{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:26px;align-items:center;position:relative}
+.tiles::before,.tiles::after{content:"";position:absolute;left:0;right:0;height:1px;background:rgba(47,107,82,.35)}
+.tiles::before{top:12%}.tiles::after{bottom:12%}
+.tile{border-radius:18px;aspect-ratio:1;display:grid;place-items:center;position:relative;z-index:1}
+.tile.tall{aspect-ratio:3/4;background:var(--orange);color:var(--cream);align-content:center;gap:10px;padding:18px}
+.tile svg{width:68%}.tile.tall svg{width:80%}
+.tile.tall b{font:800 1.3rem "Bricolage Grotesque",sans-serif}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:26px}
+.dots i{width:12px;height:12px;border-radius:50%;background:rgba(47,107,82,.25)}.dots i:nth-child(2){background:var(--green)}
+@media(max-width:700px){.tiles{grid-template-columns:1fr 1fr}.tile.tall{grid-column:1/-1;order:-1;aspect-ratio:4/3}.tiles::before,.tiles::after{display:none}}
+/* orange band */
+.band{background:var(--orange);padding:56px 0}
+.band .wrap{display:flex;align-items:center;gap:22px;justify-content:center;text-align:left}
+.band h2{color:var(--cream);max-width:15ch;font-size:clamp(2rem,5.5vw,3.6rem)}
+.band svg{width:clamp(48px,8vw,84px);color:var(--yellow);flex:none}
+/* menu */
+.menu{padding:70px 0 80px}
+.menu h2{text-align:center}
+.tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;margin:28px 0 34px;border-top:1px solid rgba(252,244,222,.3);border-bottom:1px solid rgba(252,244,222,.3);padding:10px 0}
+.tab{background:none;border:0;color:var(--cream);opacity:.7;font:500 .95rem "DM Sans";padding:6px 4px;cursor:pointer;border-bottom:2px solid transparent}
+.tab[aria-pressed="true"]{opacity:1;font-weight:700;color:var(--lime);border-color:var(--lime)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.pcard{background:var(--green2);border:1px solid rgba(252,244,222,.28);border-radius:16px;padding:10px;display:flex;flex-direction:column}
+.plate{height:150px;border-radius:10px;display:grid;place-items:center;position:relative}
+.plate svg{width:118px}
+.tag{position:absolute;top:8px;left:8px;background:var(--lime);color:var(--green);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px}
+.pbody{padding:12px 4px 4px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pbody h3{font-size:1.15rem}
+.pbody p{margin:0;font-size:.86rem;opacity:.78;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;margin:8px 0}
+.price{font:800 1.25rem "Bricolage Grotesque",sans-serif;color:var(--lime)}
+.qty{display:inline-flex;align-items:center;border:1px solid rgba(252,244,222,.35);border-radius:10px}
+.qty button{width:30px;height:30px;border:0;background:none;color:var(--cream);font-size:1.1rem;cursor:pointer}
+.qty output{min-width:22px;text-align:center;font-weight:700}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.acts .btn{padding:9px 6px;font-size:.84rem;border-radius:9px}
+.note{text-align:center;font-size:.84rem;opacity:.7;margin-top:24px}
+/* location */
+.visit{background:var(--cream);color:var(--green);padding:80px 0}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.visit h2{font-size:clamp(2.6rem,7vw,5rem);color:var(--green)}
+.visit p.lead{opacity:.85;max-width:38ch;margin:16px 0 22px}
+.frames{display:grid;gap:18px}
+.frame{background:#fff;border:1px solid rgba(47,107,82,.25);border-radius:16px;padding:14px;box-shadow:0 12px 24px -16px rgba(47,107,82,.5)}
+.frame:nth-child(1){transform:rotate(1.5deg)}.frame:nth-child(2){transform:rotate(-1.5deg)}
+.frame b{font:800 1rem "Bricolage Grotesque",sans-serif;display:block}
+.frame .info{display:grid;gap:8px;font-size:.93rem}
+.map{border-radius:10px;min-height:170px;background:linear-gradient(90deg,#E9F1D0 1px,transparent 1px) 0 0/36px 36px,linear-gradient(#E9F1D0 1px,transparent 1px) 0 0/36px 36px,#F4F8DF;display:grid;place-items:center;text-align:center;padding:16px;gap:8px;align-content:center}
+.map svg{width:40px;color:var(--orange)}
+@media(max-width:800px){.visit .wrap{grid-template-columns:1fr}}
+/* stickers */
+.facts{padding:70px 0 40px;text-align:center}
+.stick{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;margin-top:36px}
+.st{width:140px;height:140px;display:grid;place-items:center;align-content:center;color:var(--green);font-size:.82rem;font-weight:700;line-height:1.2}
+.st b{font:800 2.1rem "Bricolage Grotesque",sans-serif;display:block}
+.st.a{background:var(--lime);transform:rotate(14deg);border-radius:14px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);width:160px;height:160px}
+.st.b{background:var(--blue);border-radius:48% 52% 45% 55%;transform:rotate(-6deg)}
+.st.c{background:var(--yellow);border-radius:50%;width:150px;height:150px}
+footer{text-align:center;font-size:.88rem;opacity:.8;padding:30px 20px calc(100px + env(safe-area-inset-bottom,0px))}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:99px;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.fab svg{width:22px;height:22px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+@media(max-width:700px){
+.wrap{padding:0 18px}
+nav{padding:10px 0}
+.logo{font-size:.98rem}.logo i{width:28px;height:28px;font-size:.9rem}
+nav .btn{padding:9px 16px;font-size:.85rem;border-radius:10px}
+.hero{padding:18px 0 120px}
+.hero h1{font-size:clamp(2.9rem,13.4vw,4.6rem);line-height:.98}
+.hero .plate-big{position:relative;left:auto;top:auto;transform:none;margin:-12px auto 0;width:min(56vw,230px)}
+.sprig{left:2%;top:-6px;width:54px}
+.hero-foot{margin-top:26px;gap:18px}
+.hero-foot>div:first-child{width:100%}
+.hero-foot p{max-width:none;margin-bottom:16px}
+.hero-foot>div:first-child>div{display:grid!important;grid-template-columns:1fr 1fr;gap:10px}
+.hero-foot .btn{padding:12px 8px;font-size:.88rem}
+.mini{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:10px 14px}
+.mini>div:first-child{width:52px;flex:none}
+.mini svg{width:52px;margin:0}
+.mini b{flex:1;margin:0;font-size:.95rem}
+.mini .btn{width:auto;padding:8px 14px;font-size:.82rem}
+.story{margin-top:-70px;border-radius:50% 50% 0 0/56px 56px 0 0;padding:84px 0 48px}
+.story h2{font-size:clamp(1.8rem,8vw,2.4rem)}
+.story p.lead{font-size:.95rem;margin-bottom:30px}
+.tiles{gap:14px}
+.tile.tall{aspect-ratio:auto;padding:22px 18px}
+.tile.tall>div{width:46%!important}
+.tile.tall b{font-size:1.15rem}
+.tile svg{width:76%}
+.band{padding:40px 0}
+.band .wrap{flex-direction:column;text-align:center;gap:12px}
+.band h2{font-size:clamp(1.7rem,7.5vw,2.2rem);max-width:none}
+.menu{padding:48px 0 56px}
+h2{font-size:clamp(1.8rem,8vw,2.4rem)}
+.tabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;gap:22px;margin:20px -18px 24px;padding:8px 18px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{white-space:nowrap;flex:none}
+.grid{grid-template-columns:1fr;gap:16px}
+.plate{height:130px}.plate svg{width:104px}
+.visit{padding:56px 0}
+.visit .wrap{gap:28px}
+.visit h2{font-size:clamp(2.3rem,11vw,3.2rem)}
+.frame:nth-child(1),.frame:nth-child(2){transform:none}
+.visit .btn{width:100%}
+.facts{padding:52px 0 24px}
+.stick{gap:8px;flex-wrap:nowrap;margin-top:26px}
+.st{width:96px;height:96px;font-size:.7rem}
+.st b{font-size:1.5rem}
+.st.a{width:118px;height:118px}.st.c{width:100px;height:100px}
+.fab{padding:12px 18px;right:14px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#"><i>🍛</i>RM Padang Bateh Kota</a>
+<ul><li><a href="#">Beranda</a></li><li><a href="#tentang">Tentang</a></li><li><a href="#menu">Menu</a></li><li><a href="#lokasi">Lokasi</a></li></ul>
+<a class="btn" href="#" data-wa="Halo RM Padang Bateh Kota, saya mau pesan.">Pesan Sekarang</a></div></nav>
+
+<header class="hero"><div class="wrap" style="position:relative">
+<svg class="sprig" viewBox="0 0 60 60" fill="currentColor" aria-hidden="true"><path d="M30 58C28 40 26 28 14 20c10-2 18 2 22 10 0-12 6-22 18-26-4 12-6 22-4 34-6-4-10-4-14 2z"/></svg>
+<h1><span>Rasa Padang</span><span>Untuk Semua</span></h1>
+<div class="plate-big" id="heroPlate"></div>
+<div class="hero-foot">
+<div><p>Rendang, gulai, dan sambal lado khas Minang. Dimasak dengan rempah, disajikan hangat di Andir, Bandung.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn lime" href="#" data-wa="Halo RM Padang Bateh Kota, saya mau pesan.">Pesan via WhatsApp</a><a class="btn sf" href="#" data-shopee target="_blank" rel="noopener">ShopeeFood</a></div></div>
+<div class="mini"><div id="miniPlate"></div><b>Rendang Daging<br>Menu Terlaris</b><a class="btn green" href="#menu">Lihat Menu</a></div>
+</div></div></header>
+
+<section class="story" id="tentang"><div class="wrap">
+<h2>Dimasak dengan rempah, disajikan dengan hati</h2>
+<p class="lead">RM Padang Bateh Kota ada di Jl. Rajawali Barat, Andir. Lauk dimasak setiap hari dengan bumbu Minang, sambal bisa dikurangi atau dipisah, dan siap dinikmati di tempat, dibungkus, atau diantar.</p>
+<div class="tiles">
+<div class="tile" style="background:var(--yellow)" data-p="#EE8A3A"></div>
+<div class="tile tall"><div data-p="#F7D26A" style="width:80%"></div><b>Gulai dan Rendang</b></div>
+<div class="tile" style="background:var(--blue)" data-p="#EF6A3E"></div>
+</div>
+<div class="dots"><i></i><i></i><i></i></div>
+</div></section>
+
+<div class="band"><div class="wrap">
+<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 28h52c0 14-10 24-26 24S6 42 6 28zM20 20c-3-4 3-6 0-10M32 20c-3-4 3-6 0-10M44 20c-3-4 3-6 0-10"/></svg>
+<h2>Pedas gurih khas Minang, hangat di setiap suapan</h2></div></div>
+
+<section class="menu" id="menu"><div class="wrap">
+<h2>Temukan Menu Kami</h2>
+<div class="tabs" id="tabs" role="group" aria-label="Kategori menu"></div>
+<div class="grid" id="grid"></div>
+<p class="note">Harga di halaman ini contoh. Sesuaikan dengan daftar harga resmi.</p>
+</div></section>
+
+<section class="visit" id="lokasi"><div class="wrap">
+<div><h2>Mampir ke warung kami</h2>
+<p class="lead">Datang langsung untuk makan di tempat, atau pesan lewat WhatsApp dan ShopeeFood.</p>
+<a class="btn green" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Rumah+Makan+Bateh+Kota+-+Rajawali+Barat/data=!4m2!3m1!1s0x0:0xe39babc5f2087748">Buka di Google Maps</a></div>
+<div class="frames">
+<div class="frame"><div class="info"><div><b>Alamat</b>Jl. Rajawali Barat No.101, Garuda, Kec. Andir, Kota Bandung, Jawa Barat 40184</div><div><b>Telepon / WhatsApp</b><a href="tel:+6289516070270">0895-1607-0270</a></div><div><b>Jam buka</b>Buka · Tutup pukul 21.00</div></div></div>
+<div class="frame"><div class="map"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.200 7 13 7 13s7-7.800 7-13a7 7 0 0 0-7-7zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z"/></svg><b>RM Padang Bateh Kota</b><span>Jl. Rajawali Barat No.101</span></div></div>
+</div></div></section>
+
+<section class="facts"><div class="wrap">
+<h2>Sekilas tentang kami</h2>
+<div class="stick">
+<div class="st a"><div><b>21.00</b>Tutup</div></div>
+<div class="st b"><div><b>11</b>Pilihan menu</div></div>
+<div class="st c"><div><b>3</b>Cara pesan</div></div>
+</div></div></section>
+<footer>© 2026 RM Padang Bateh Kota · Jl. Rajawali Barat No.101, Andir, Bandung</footer>
+
+<a class="fab" href="#" data-wa="Halo RM Padang Bateh Kota, saya mau pesan." aria-label="Pesan lewat WhatsApp">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.200 14.800l-.3-.2-2.800.7.7-2.700-.2-.3A8 8 0 0 1 12 4z"/><circle cx="12" cy="12" r="2"/></svg>Pesan</a>
+
+<script>
+const WA="6289516070270";
+const SHOPEE="https://shopee.co.id/universal-link/now-food/shop/20182146?deep_and_deferred=1&shareChannel=whatsapp";
+const MENU=[
+{n:"Rendang Daging",c:"Daging",p:28000,d:"Daging sapi dimasak santan dan rempah sampai empuk.",col:"#EE8A3A",bg:"#F8D340",t:"Terlaris"},
+{n:"Ayam Pop",c:"Ayam",p:24000,d:"Ayam rebus bumbu bawang putih, digoreng ringan.",col:"#F5B63A",bg:"#9CC9F2"},
+{n:"Gulai Ayam",c:"Ayam",p:24000,d:"Kuah gulai kuning kental dengan ayam besar.",col:"#F7CB45",bg:"#E6F76A"},
+{n:"Ayam Bakar Lado",c:"Ayam",p:25000,d:"Ayam bakar dengan sambal lado merah.",col:"#EF6A3E",bg:"#F8D340"},
+{n:"Dendeng Balado",c:"Daging",p:30000,d:"Dendeng sapi tipis renyah dengan sambal lado.",col:"#E94F37",bg:"#E6F76A",t:"Pedas"},
+{n:"Gulai Kepala Ikan",c:"Ikan",p:35000,d:"Kepala ikan dalam kuah gulai kental kaya rempah.",col:"#F29A2E",bg:"#9CC9F2"},
+{n:"Ikan Goreng Balado",c:"Ikan",p:23000,d:"Ikan goreng garing dengan balado tomat.",col:"#F0794A",bg:"#F8D340"},
+{n:"Telur Balado",c:"Sayur & Pendamping",p:9000,d:"Telur rebus goreng dengan sambal balado.",col:"#F25C3C",bg:"#E6F76A"},
+{n:"Daun Singkong",c:"Sayur & Pendamping",p:6000,d:"Daun singkong rebus dengan sambal hijau.",col:"#6DBE6B",bg:"#F8D340"},
+{n:"Gulai Nangka",c:"Sayur & Pendamping",p:7000,d:"Nangka muda dalam kuah santan gurih.",col:"#F7D26A",bg:"#9CC9F2"},
+{n:"Nasi Putih",c:"Sayur & Pendamping",p:6000,d:"Nasi hangat untuk semua lauk.",col:"#FBF0D4",bg:"#E6F76A"}
+];
+const cats=["Semua",...new Set(MENU.map(m=>m.c))];
+const rp=n=>"Rp"+n.toLocaleString("id-ID");
+const q={};let cur="Semua";
+const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+document.querySelectorAll("[data-wa]").forEach(a=>a.href=wa(a.dataset.wa));
+document.querySelectorAll("[data-shopee]").forEach(a=>a.href=SHOPEE);
+function plate(c){return `<svg viewBox="0 0 100 100" aria-hidden="true" style="width:100%"><circle cx="50" cy="50" r="47" fill="#fff"/><circle cx="50" cy="50" r="38" fill="none" stroke="#F5B82E" stroke-width="1.4" stroke-dasharray="2 4"/><circle cx="50" cy="50" r="28" fill="${c}"/><circle cx="41" cy="42" r="7" fill="#fff" opacity=".22"/><circle cx="60" cy="58" r="5" fill="#4CAF6A"/><circle cx="58" cy="40" r="3.5" fill="#E8582C"/></svg>`}
+document.getElementById("heroPlate").innerHTML=plate("#EE8A3A");
+document.getElementById("miniPlate").innerHTML=plate("#EE8A3A");
+document.querySelectorAll("[data-p]").forEach(e=>e.innerHTML=plate(e.dataset.p));
+function render(){
+ document.getElementById("tabs").innerHTML=cats.map(c=>`<button class="tab" aria-pressed="${c===cur}" data-c="${c}">${c}</button>`).join("");
+ document.getElementById("grid").innerHTML=MENU.map((m,i)=>({m,i})).filter(x=>cur==="Semua"||x.m.c===cur).map(({m,i})=>`
+ <article class="pcard"><div class="plate" style="background:${m.bg}">${plate(m.col)}${m.t?`<span class="tag">${m.t}</span>`:""}</div>
+ <div class="pbody"><h3>${m.n}</h3><p>${m.d}</p>
+ <div class="row"><span class="price">${rp(m.p)}</span>
+ <span class="qty"><button data-d="-1" data-i="${i}" aria-label="Kurangi ${m.n}">−</button><output id="q${i}">${q[i]||1}</output><button data-d="1" data-i="${i}" aria-label="Tambah ${m.n}">+</button></span></div>
+ <div class="acts"><button class="btn wa" data-order="${i}">WhatsApp</button><a class="btn sf" href="${SHOPEE}" target="_blank" rel="noopener">ShopeeFood</a></div></div></article>`).join("");
+}
+document.addEventListener("click",e=>{
+ const t=e.target.closest("button");if(!t)return;
+ if(t.dataset.c){cur=t.dataset.c;render()}
+ else if(t.dataset.d){const i=t.dataset.i;q[i]=Math.max(1,Math.min(20,(q[i]||1)+ +t.dataset.d));document.getElementById("q"+i).textContent=q[i]}
+ else if(t.dataset.order!==undefined){const i=t.dataset.order,m=MENU[i],n=q[i]||1;
+  window.open(wa(`Halo RM Padang Bateh Kota, saya mau pesan:\n${n}x ${m.n} (${rp(m.p*n)})\n\nMakan di tempat / bungkus / diantar?`),"_blank","noopener")}
+});
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+SECRET_KEY = "replace-with-a-long-random-secret"
+DEBUG = True
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "testserver"]
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "change-me"
+STORAGE_BACKEND = "local"
+GITHUB_TOKEN = ""
+GITHUB_OWNER = ""
+GITHUB_REPOSITORY = ""
+GITHUB_BRANCH = "main"
+CSRF_TRUSTED_ORIGINS = []

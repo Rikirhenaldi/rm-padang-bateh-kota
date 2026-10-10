@@ -1,0 +1,8 @@
+{
+  "categories": [
+    {"id": "top-picks", "name": "Resto's top picks", "description": "Menu pilihan restoran", "active": true, "sort_order": 1},
+    {"id": "paketan-komplit", "name": "Menu Paketan Komplit", "description": "Nasi dan lauk lengkap", "active": true, "sort_order": 2},
+    {"id": "satuan", "name": "Menu Satuan", "description": "Lauk dan pelengkap satuan", "active": true, "sort_order": 3},
+    {"id": "paketan-hemat", "name": "Menu Paketan Hemat Murah Meriah", "description": "Pilihan paket hemat", "active": true, "sort_order": 4}
+  ]
+}

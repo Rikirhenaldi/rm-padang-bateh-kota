@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}Kontak · {{ restaurant.name }}{% endblock %}
+{% block content %}<main class="page contact-page"><div class="wrap"><h1>Pesan dan Hubungi Kami</h1><p class="lead page-lead">Pilih cara pesan yang paling nyaman.</p><div class="contact-actions"><a class="btn wa" data-wa="Halo {{ restaurant.name }}, saya mau pesan." href="#">Pesan via WhatsApp</a><a class="btn sf" href="{{ restaurant.shopee_url }}" target="_blank" rel="noopener">Pesan di ShopeeFood</a><a class="btn green" href="tel:+{{ restaurant.whatsapp }}">Telepon {{ restaurant.phone }}</a></div><div class="contact-info"><b>{{ restaurant.name }}</b><span>{{ restaurant.address }}</span></div></div></main>{% endblock %}

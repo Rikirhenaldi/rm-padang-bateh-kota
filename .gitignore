@@ -1,0 +1,9 @@
+local_settings.py
+__pycache__/
+*.py[cod]
+.venv/
+staticfiles/
+media/
+.pytest_cache/
+.coverage
+db.sqlite3

@@ -1,0 +1,28 @@
+{
+  "name": "RM Padang Bateh Kota",
+  "tagline": "Rasa Padang Untuk Semua",
+  "description": "Masakan Padang khas dengan pilihan nasi komplit, lauk satuan, dan paket hemat.",
+  "logo": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a5a5b76e-1ab9-4d42-8a29-b447323e8eff_Go-Biz_20220204_133709.jpeg",
+  "address": "Jl Rajawali Barat No101 Rt 06 Rw 02, Kel. Garuda, Kec. Andir, samping Indiehome/Plaza Telkom Rajawali",
+  "phone": "0895-1607-0270",
+  "whatsapp": "6289516070270",
+  "shopee_url": "https://shopee.co.id/universal-link/now-food/shop/20182146?deep_and_deferred=1&shareChannel=whatsapp",
+  "gofood_url": "https://gofood.co.id/bandung/restaurant/rm-padang-bateh-kota-rajawali-samping-plaza-telkom-rajawali-322f1e2b-15ff-4305-b97c-73eb630896de",
+  "google_maps_url": "https://www.google.com/maps/place/Rumah+Makan+Bateh+Kota+-+Rajawali+Barat/data=!4m2!3m1!1s0x0:0xe39babc5f2087748",
+  "latitude": -6.913035273281025,
+  "longitude": 107.5756412744522,
+  "rating": 4.2,
+  "rating_count": 39,
+  "opening_hours": [
+    {"days":"Senin","hours":"11.00–19.00"},
+    {"days":"Selasa","hours":"11.00–19.00"},
+    {"days":"Rabu","hours":"10.00–19.00"},
+    {"days":"Kamis","hours":"11.00–19.00"},
+    {"days":"Jumat","hours":"10.00–19.00"},
+    {"days":"Sabtu","hours":"11.00–19.00"},
+    {"days":"Minggu","hours":"11.00–19.00"}
+  ],
+  "instagram": "",
+  "facebook": "",
+  "tiktok": ""
+}
